@@ -7,6 +7,9 @@
     $confirmpassword = $_POST['confirmpassword'];
     $gender = $_POST['gender'];
 
+    /*
+    //validation of form
+
     if (!preg_match("/^[a-zA-Z ]+$/",$fullname)) 
     {
         $fullname_error = "Name must contain only alphabets and space";
@@ -35,6 +38,7 @@
     {
         $msg_gender = "You must select a gender";
     }
+    */
 
     //Database Connection
     $conn = new mysqli('localhost','root','','cardb');
