@@ -42,9 +42,9 @@
 
     //Database Connection
     $conn = new mysqli('localhost','root','','cardb');
-    if($conn->connect_errno)
+    if($conn->connect_error)
     {
-       die('Connection Failed : '.$conn->connect_errno); 
+       die('Connection Failed : '.$conn->connect_error); 
     }
     else
     {
